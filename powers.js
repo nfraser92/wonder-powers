@@ -14,31 +14,32 @@
 //     flight.classList.toggle("enabled")
 // })
 
+// Targeting Buttons
 const flightButton = document.getElementById("activate-flight");
-const flightClass = document.querySelector("#flight")
+const mindButton = document.getElementById("activate-mindreading");
+const xRayButton = document.getElementById("activate-xray");
 
+// Targeting element classes
+const flightClass = document.querySelector("#flight")
+const mindClass = document.querySelector("#mindreading")
+const xRayClass = document.querySelector("#xray")
+
+// Functions to toggle class
 function flightHandlerFunction() {
     flightClass.classList.toggle("disabled")
     flightClass.classList.toggle("enabled")
 }
-
-const mindButton = document.getElementById("activate-mindreading");
-const mindClass = document.querySelector("#mindreading")
-
 function mindReadingFunctionFunction() {
     mindClass.classList.toggle("disabled")
     mindClass.classList.toggle("enabled")
 }
-const xRayButton = document.getElementById("activate-xray");
-const xRayClass = document.querySelector("#xray")
-
 function xRayFunction() {
     xRayClass.classList.toggle("disabled")
     xRayClass.classList.toggle("enabled")
 }
-
-
-
+// Invoking functions
 flightButton.addEventListener("click", flightHandlerFunction)
 mindButton.addEventListener("click", mindReadingFunctionFunction)
 xRayButton.addEventListener("click", xRayFunction)
+
+
